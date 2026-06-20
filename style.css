@@ -15,11 +15,14 @@ body { /* A modifier plus tard */
 /* Style pour les onglets secondaires */
 
     .onglets_principales { /* Sert à définir le style de fond et le padding des onglets secondaires */
-        background-color: #404040;
-        padding: 10px 0;
+        background-color: #2a2a2a;
+        padding: 10px;
+        margin-top: -8px; /* Sert à ajouter un peu d'espace au-dessus des onglets secondaires */
+        margin-left: -10px; /* Sert à centrer les onglets secondaires */
+        margin-right: -8px; /* Sert à centrer les onglets secondaires */
     }
 
-    .onglets_principales ul {
+    .onglets_principales ul { /* Sert à enlever les puces et à centrer les onglets secondaires */
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -27,38 +30,31 @@ body { /* A modifier plus tard */
         justify-content: center;
     }
 
-    .onglets_principales li {
-        margin: 0 15px;
+    .onglets_principales li { /* Sert à espacer les onglets secondaires les uns des autres */
+        margin: 0 20px;
     }
 
-    .onglets_principales a {
+    .onglets_principales a { /* Sert à définir le style des liens des onglets secondaires */
         text-decoration: none;
         color: #2777e0;
         font-weight: bold;
     }
 
-    .onglets_principales a:hover {
-        background-color: #044aa6;
+    .onglets_principales a:hover { /* Sert à définir le style des liens des onglets secondaires au survol du curseur */
         color: #ffffff;
+        padding: 9px 20px; /* Sert à ajouter un peu d'espace autour du texte des onglets secondaires */
+        border-radius: 5px; /* Sert à arrondir les coins des onglets secondaires */
+        color: #ffffff;
+        animation: hoverAnimation 0.3s ease-in-out; /* Sert à ajouter une animation au survol du curseur */
     }
 
-/* Style des card principal */
-
-    .card_plateformes {
-        background-color: #242424;
-        padding: 20px;
-        margin: 20px auto;
-        width: 80%;
-        border-radius: 10px;
-    }
-
-/* Style pour les onglets principaux */
+/* Style pour les onglets plateformes */
 
     .onglets_plateformes { /* Sert à définir le style de fond et le padding des onglets principaux */
         padding: 10px 0;
         background-color: #020202a9;
         margin-top: -8px; /* Sert à enlever l'espace au-dessus des onglets principaux */
-        width: 60%; /* Sert à faire en sorte que les onglets principaux prennent toute la largeur de la page */
+        width: 83%; /* Sert à faire en sorte que les onglets principaux prennent toute la largeur de la page */
         border-radius: 10px; /* Sert à arrondir les coins des onglets principaux */
 
         margin-left: auto; /* Sert à centrer les onglets principaux */
@@ -82,10 +78,15 @@ body { /* A modifier plus tard */
         text-decoration: none;
         color: #044aa6;
         font-weight: bold;
+
         background-color: #242424;
-        padding: 150px 125px; /* Sert à ajouter un peu d'espace autour du texte des onglets */
-        border-radius: 5px; /* Sert à arrondir les coins des onglets */
-        display: grid; /* Sert à faire en sorte que les onglets prennent la taille du texte */
+        padding: 40% 10%; /* Sert à ajouter un peu d'espace autour du texte des onglets */
+        border-radius: 2%; /* Sert à arrondir les coins des onglets */
+        
+        display: flex; /* Sert à faire en sorte que les onglets aient tous la même taille */
+        align-items: center; /* centre verticalement le texte */
+        justify-content: center; /* centre horizontalement le texte */
+
     }
 
 /* Style des onglets principaux au survol du curseur */
@@ -93,4 +94,13 @@ body { /* A modifier plus tard */
     .onglets_plateformes a:hover { /* Rajouter une animation de survol plus tard */
         background-color: #044aa6;
         color: #ffffff;
+    }
+
+/* Style pour le texte des onglets plateformes */
+
+    .texte_onglets_plateformes { /* Sert à définir le style du texte des onglets principaux */
+        text-align: center;
+        width: 100%; /* Sert à faire en sorte que le texte prenne toute la largeur des onglets */
+        height: 100%; /* Sert à faire en sorte que le texte prenne toute la hauteur des onglets */
+        overflow: auto; /* Sert à cacher le texte qui dépasse des onglets */
     }
