@@ -1,0 +1,96 @@
+body { /* A modifier plus tard */
+    background-color: #404040;
+    color: #2777e0;
+}
+
+/* Style pour le titre principal */
+
+    .titre_principal {
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 20px; /* Sert à ajouter un peu d'espace au-dessus du titre */
+    }
+
+
+/* Style pour les onglets secondaires */
+
+    .onglets_principales { /* Sert à définir le style de fond et le padding des onglets secondaires */
+        background-color: #404040;
+        padding: 10px 0;
+    }
+
+    .onglets_principales ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .onglets_principales li {
+        margin: 0 15px;
+    }
+
+    .onglets_principales a {
+        text-decoration: none;
+        color: #2777e0;
+        font-weight: bold;
+    }
+
+    .onglets_principales a:hover {
+        background-color: #044aa6;
+        color: #ffffff;
+    }
+
+/* Style des card principal */
+
+    .card_plateformes {
+        background-color: #242424;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+/* Style pour les onglets principaux */
+
+    .onglets_plateformes { /* Sert à définir le style de fond et le padding des onglets principaux */
+        padding: 10px 0;
+        background-color: #020202a9;
+        margin-top: -8px; /* Sert à enlever l'espace au-dessus des onglets principaux */
+        width: 60%; /* Sert à faire en sorte que les onglets principaux prennent toute la largeur de la page */
+        border-radius: 10px; /* Sert à arrondir les coins des onglets principaux */
+
+        margin-left: auto; /* Sert à centrer les onglets principaux */
+        margin-right: auto; /* Sert à centrer les onglets principaux */
+    }
+
+    .onglets_plateformes ul { /* Sert à enlever les puces et à centrer les onglets */
+        list-style-type: none; /* Enlève les points*/
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .onglets_plateformes li { /* Sert à espacer les onglets les uns des autres */
+        margin: 0 15px;
+    }
+
+    .onglets_plateformes a { /* Sert à définir le style des liens des onglets principaux */
+        text-decoration: none;
+        color: #044aa6;
+        font-weight: bold;
+        background-color: #242424;
+        padding: 150px 125px; /* Sert à ajouter un peu d'espace autour du texte des onglets */
+        border-radius: 5px; /* Sert à arrondir les coins des onglets */
+        display: grid; /* Sert à faire en sorte que les onglets prennent la taille du texte */
+    }
+
+/* Style des onglets principaux au survol du curseur */
+
+    .onglets_plateformes a:hover { /* Rajouter une animation de survol plus tard */
+        background-color: #044aa6;
+        color: #ffffff;
+    }
